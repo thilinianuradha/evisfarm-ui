@@ -6,7 +6,8 @@ import Login from './Login'
 
 function Home() {
   return (
-    <div className='home'> <h1>Welcome to EvisFarm</h1>
+    <div className='home'> <h1>EvisFarm</h1>
+    <p>This is "EvisFarm" Home page </p>
       <Link to="/Login"><button> Login </button></Link>
                    <Router>
                    <Switch> 

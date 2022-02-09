@@ -7,7 +7,7 @@ function Profile() {
 let history = useHistory();
 
     return (
-        <div className="user_profile"> <h1>welcome user </h1>
+        <div className="user_profile"> <h1>welcome user #####</h1>
         <button onClick={()=> {history.push('/Home')}}> Back to Home </button>
        
      </div>
