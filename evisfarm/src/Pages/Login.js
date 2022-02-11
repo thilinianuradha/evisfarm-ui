@@ -1,28 +1,54 @@
-import React, { Component} from "react";
-import './Login.css';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import Profile from "./Profile";
+import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 
-class Login extends Component
-{
-  render(){
+export default class Login extends Component {
+  constructor(props) {
+    super(props)
+    let loggedIn = false
+    this.state = {
+      Username:"",
+      Password:"",
+      loggedIn
+    }
+    this.onChange = this.onChange.bind(this)
+    this.submitForm = this.submitForm.bind(this)
+  }
+
+  onChange(e){
+    this.setState({
+      [e.target.name] : e.target.value
+    })
+  }
+
+  submitForm(e){
+    e.preventDefault()
+    const {Username, Password} = this.state
+
+    if (Username==="Thilini" && Password==="thilini@123"){
+      localStorage.setItem("token", "hjwgwjhgefwjeghfwjhef")
+      this.setState({
+        loggedIn: true
+      })
+    }
+  }
+
+  render() {
+    if(this.state.loggedIn){
+      return <Redirect to = "/Profile"/>
+    }
     return (
-          <div className="Log">
-              <h2>Welcome to Evisfarm !</h2>
-             <form> 
-                <label> <p>Username</p> <input type="text" /> </label>
-                <label> <p>Password</p> <input type="password" /> </label>
-                 <div>
-                   <Link to="/Profile"><button> Submit </button></Link>
-                   <Router>
-                   <Switch> 
-                     <Route path="/Profile" component={Profile} /> 
-                   </Switch> 
-                   </Router>
-                   </div>
-                   </form>
-          </div>
-    );
+      <div>
+<h1>welcome to EvisFarm!</h1>
+<form onSubmit={this.submitForm}>
+  <input type="text" placeholder="Username" name="Username" value={this.state.Username} onChange={this.onChange}/>
+  <br/>
+  <input type="Password" placeholder="Password" name="Password" value={this.state.Password} onChange={this.onChange}/>
+  <br></br>
+  <input type="Submit"/>
+
+  <p> Username = "Thilini" and Password = "thilini@123"</p>
+</form>
+      </div>
+    )
+  }
 }
-}
-export default Login;

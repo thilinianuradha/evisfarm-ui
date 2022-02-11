@@ -1,16 +1,30 @@
-import React from "react";
-import { useHistory } from "react-router";
-import './Profile.css';
+import React, { Component } from 'react'
+import { Link, Redirect} from 'react-router-dom'
 
-function Profile(){
-let history = useHistory();
+export default class Profile extends Component {
+constructor(props){
+    super(props)
+    const token = localStorage.getItem("token")
 
-    return (
-        <div className="user_profile"> <h1>welcome user #####</h1>
-        <button onClick={() => {history.push('./Home')}}> Back to Home </button>
-       
-     </div>
-
-        );
+    let loggedIn = true
+    if (token==null){
+        loggedIn=false
     }
-    export default Profile;
+    this.state = {
+        loggedIn
+    }
+}
+
+  render() {
+      if(this.state.loggedIn===false){
+          return <Redirect to = "Home" />
+      }
+    return (
+      <div>
+<h1>This is Admin page !</h1>
+<Link to ="/Home">Back to Home</Link>
+
+      </div>
+    )
+  }
+}

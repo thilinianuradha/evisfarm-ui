@@ -1,20 +1,16 @@
-import React from 'react'
-import './Home.css';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import Login from './Login'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
+export default class Home extends Component {
+  render() {
+    return (
+      <div>
+ <h1>EvisFarm</h1>
+ <h2>Welcome to home page!</h2>
+ <Link to="/Login">Login</Link>
 
-function Home() {
-  return (
-    <div className='home'> <h1>EvisFarm</h1>
-    <p>This is "EvisFarm" Home page </p>
-      <Link to="/Login"><button> Login </button></Link>
-                   <Router>
-                   <Switch> 
-                <Route path="/Login" component={Login} /> 
-            </Switch> </Router>
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
-export default Home

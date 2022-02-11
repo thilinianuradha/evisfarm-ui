@@ -8,9 +8,9 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 function App() {
   return <Router>
           <Switch>
-            <Route path="/Home" component={Home}/>
-            <Route path="/Login" component={Login}/>
-            <Route path="/Profile" component={Profile}/>
+            <Route exact path="/Home" component={Home}/>
+            <Route exact path="/Login" component={Login}/>
+            <Route exact path="/Profile" component={Profile}/>
           </Switch>
         </Router>
 }
