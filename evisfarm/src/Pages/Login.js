@@ -1,13 +1,14 @@
-import React from "react";
+import React, { Component} from "react";
 import './Login.css';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Profile from "./Profile";
 
-function Login() 
+class Login extends Component
 {
+  render(){
     return (
           <div className="Log">
-              <h2>Welcomw to Evisfarm !</h2>
+              <h2>Welcome to Evisfarm !</h2>
              <form> 
                 <label> <p>Username</p> <input type="text" /> </label>
                 <label> <p>Password</p> <input type="password" /> </label>
@@ -22,5 +23,6 @@ function Login()
                    </form>
           </div>
     );
+}
 }
 export default Login;
