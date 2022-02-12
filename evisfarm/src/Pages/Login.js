@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
+import './Login.css';
 
 export default class Login extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ export default class Login extends Component {
     const {Username, Password} = this.state
 
     if (Username==="Thilini" && Password==="thilini@123"){
-      localStorage.setItem("token", "hjwgwjhgefwjeghfwjhef")
+      localStorage.setItem("token", "")
       this.setState({
         loggedIn: true
       })
@@ -37,14 +38,18 @@ export default class Login extends Component {
       return <Redirect to = "/Profile"/>
     }
     return (
-      <div>
+      <div className='Login'>
 <h1>welcome to EvisFarm!</h1>
 <form onSubmit={this.submitForm}>
+  <div className='input'>
   <input type="text" placeholder="Username" name="Username" value={this.state.Username} onChange={this.onChange}/>
-  <br/>
+  <br/> </div>
+  <div className='input'>
   <input type="Password" placeholder="Password" name="Password" value={this.state.Password} onChange={this.onChange}/>
-  <br></br>
+  <br/></div>
+  <div className='input'>
   <input type="Submit"/>
+  </div>
 
   <p> Username = "Thilini" and Password = "thilini@123"</p>
 </form>

@@ -9,7 +9,7 @@ function Table1({ list, colNames, width='auto', height='auto'}) {
          <thead>
              <tr>
                  {colNames.map((headeritem, Index) => (
-                     <th key={index}>
+                     <th key={Index}>
                             {headeritem.toUpperCase()}
                      </th>
                  ))}
