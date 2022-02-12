@@ -16,16 +16,15 @@ function Table1({ list, colNames, width='auto', height='auto'}) {
              </tr>
 
          </thead>
-<tbody>
-    {Object.values(list).map((obj, index) =>(
-        <tr key={index}>
-            {Object.values(obj).map((value, index2) =>(
+        <tbody>
+          {Object.values(list).map((obj, index) =>(
+             <tr key={index}>
+                 {Object.values(obj).map((value, index2) =>(
                 <td key={index2}> {value} </td>
-            )
-            )}
-        </tr>
-    ))}
-</tbody>
+                 ))}
+             </tr>
+              ))}   
+        </tbody>
      </table>
  )
 }

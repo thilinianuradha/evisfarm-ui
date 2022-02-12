@@ -48,17 +48,19 @@ constructor(props){
       if(this.state.loggedIn===false){
           return <Redirect to = "/Home" />
       }
-    return (
-      <div className='Table1'>
-<h1> Hello Thilini!</h1>
-<Link to ="/Home"> <button type="button">
-Back to Home
-     </button></Link>
+      return (
+        <div className='Table1'>
+          <h1> Hello Thilini!</h1>
+          <Link to ="/Home"> 
+            <button type="button">
+              Back to Home
+            </button>
+          </Link>
 
-<div><h3>Pending Requests</h3><Table1 list={list} colNames={colNames}/></div>
-<div><h3>In-progress</h3><Table1 list={list2} colNames={colNames2}/></div>
-<div><h3>History(Details)</h3><Table1 list={list3} colNames={colNames3}/></div>
-      </div>
+          <div><h3>Pending Requests</h3><Table1 list={list} colNames={colNames}/></div>
+          <div><h3>In-progress</h3><Table1 list={list2} colNames={colNames2}/></div>
+          <div><h3>History(Details)</h3><Table1 list={list3} colNames={colNames3}/></div>
+       </div>
     )
   }
 }
