@@ -39,20 +39,22 @@ export default class Login extends Component {
     }
     return (
       <div className='Login'>
-<h1>welcome to EvisFarm!</h1>
-<form onSubmit={this.submitForm}>
-  <div className='input'>
-  <input type="text" placeholder="Username" name="Username" value={this.state.Username} onChange={this.onChange}/>
-  <br/> </div>
-  <div className='input'>
-  <input type="Password" placeholder="Password" name="Password" value={this.state.Password} onChange={this.onChange}/>
-  <br/></div>
-  <div className='input'>
-  <input type="Submit"/>
-  </div>
+        <h1>welcome to EvisFarm!</h1>
+        <form onSubmit={this.submitForm}>
+          <div className='input'>
+          <input type="text" placeholder="Username" name="Username" value={this.state.Username} onChange={this.onChange}/>
+          <br/> 
+          </div>
+          <div className='input'>
+          <input type="Password" placeholder="Password" name="Password" value={this.state.Password} onChange={this.onChange}/>
+          <br/>
+          </div>
+        <div className='input'>
+          <input type="Submit"/>
+        </div>
 
-  <p> Username = "Thilini" and Password = "thilini@123"</p>
-</form>
+      <p> Username = "Thilini" and Password = "thilini@123"</p>
+        </form>
       </div>
     )
   }
