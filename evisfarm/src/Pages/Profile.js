@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link, Redirect} from 'react-router-dom'
 import Table1 from '../Common components/Table1'
 import './Profile.css';
+import Image1 from '../Images/images.jpg'
 
 
 const list = [
@@ -46,21 +47,28 @@ constructor(props){
 
   render() {
       if(this.state.loggedIn===false){
-          return <Redirect to = "/Home" />
+          return <Redirect to = "/" />
       }
       return (
-        <div className='Table1'>
-          <h1> Hello Thilini!</h1>
-          <Link to ="/Home"> 
-            <button type="button">
-              Back to Home
-            </button>
-          </Link>
+        <div className='row profile'>
+           <div className='col column1'>
+             <h1> Hello Thilini!</h1>
+             <img src={Image1} alt=''/> <br/>
+               <Link to ="/"> 
+               <div class="col-md-12 text-center">
+                  <button type="button" class="btn btn-primary">
+                      Back to Home
+                  </button>
+                  </div>
+               </Link>
+           </div>
+           <div className='col column2 Table1'>
 
-          <div><h3>Pending Requests</h3><Table1 list={list} colNames={colNames}/></div>
-          <div><h3>In-progress</h3><Table1 list={list2} colNames={colNames2}/></div>
-          <div><h3>History(Details)</h3><Table1 list={list3} colNames={colNames3}/></div>
-       </div>
+             <div><h5>Pending Requests</h5><Table1 list={list} colNames={colNames}/></div>
+             <div><h5>In-progress</h5><Table1 list={list2} colNames={colNames2}/></div>
+             <div><h5>History(Details)</h5><Table1 list={list3} colNames={colNames3}/></div>
+           </div>
+        </div>
     )
   }
 }

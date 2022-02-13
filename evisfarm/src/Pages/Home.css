@@ -1,6 +1,12 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: cadetblue;
+  
+    padding: 225px;
+    width: auto;
+    margin: auto;
+    text-align: center;
+
+}
+
+.link {
+    padding: 25px;
 }

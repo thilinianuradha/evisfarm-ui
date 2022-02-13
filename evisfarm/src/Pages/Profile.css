@@ -1,6 +1,32 @@
 
+.profile {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+}
+
 .Table1 {
-    display: flex;
-    flex-direction: column;
+   text-align: left;
+   font-size: small;
+}
+.column1 {
+    height: auto;
+    outline-color: black;
+    padding-top: 50px;
+}
+
+img {
+    text-align: center;
+    display: block;
+    justify-content: center;
     align-items: center;
+    margin: auto;
+}
+
+button{
+    text-align: center;
+    margin: auto;
+   
+    
 }

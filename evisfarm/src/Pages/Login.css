@@ -1,18 +1,14 @@
 .Login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+   
+ padding: 100px;
+   
 }
 
 form, h1 {
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
+    
+    text-align: center;
 }
 
-.input {
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
+.input {   margin: 20px;
+   text-align: center;
 }
