@@ -24,15 +24,9 @@ export default class Navigation extends Component {
               <Nav.Link href="">Contact Us</Nav.Link>
         
             </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+            <Nav className="d-flex">
+            <Nav.Link href="/Login"> Login </Nav.Link>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
