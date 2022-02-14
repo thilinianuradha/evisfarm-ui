@@ -5,6 +5,7 @@ import './Home.css'
 export default class Home extends Component {
   render() {
     return (
+      
       <div className='home'>
  <h1 className='h1'>EvisFarm</h1>
  <h2 className='h2'>Welcome to home page!</h2>

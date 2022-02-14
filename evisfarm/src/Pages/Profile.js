@@ -15,12 +15,12 @@ const colNames = ['Id','Description','Pending_Requests']
 
 
 const list2 = [
-  {id:1, Description:"Maize cultivation/Anuradhapura/50Acres", Pending_Requests: 4},
-  {id:2, Description:"Paddy cultivation/Polonnaruwa/10Acres", Pending_Requests: 2},
-  {id:3, Description:"Carrot cultivation/Nuwara-Eliya/2Acres", Pending_Requests: 0},
+  {id:1, Description:"Maize cultivation/Anuradhapura/50Acres", Inprogress: 4},
+  {id:2, Description:"Paddy cultivation/Polonnaruwa/10Acres", Inprogress: 2},
+  {id:3, Description:"Carrot cultivation/Nuwara-Eliya/2Acres", Inprogress: 0},
 ]
 
-const colNames2 = ['Id','Description','Pending_Requests']
+const colNames2 = ['Id','Description','Inprogress']
 
 const list3 = [
   {id:1, Description:"Maize cultivation/Anuradhapura/50Acres", Status: "Completed" , Vendor:"Thilini Anuradha"},
@@ -56,7 +56,7 @@ constructor(props){
              <img src={Image1} alt=''/> <br/>
                <Link to ="/"> 
                <div class="col-md-12 text-center">
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" >
                       Back to Home
                   </button>
                   </div>
@@ -64,9 +64,9 @@ constructor(props){
            </div>
            <div className='col column2 Table1'>
 
-             <div><h5>Pending Requests</h5><Table1 list={list} colNames={colNames}/></div>
-             <div><h5>In-progress</h5><Table1 list={list2} colNames={colNames2}/></div>
-             <div><h5>History(Details)</h5><Table1 list={list3} colNames={colNames3}/></div>
+             <div className='table_list'><h5>Pending Requests</h5><Table1 list={list} colNames={colNames}/></div>
+             <div className='table_list'><h5>In-progress</h5><Table1 list={list2} colNames={colNames2}/></div>
+             <div className='table_list'><h5>History(Details)</h5><Table1 list={list3} colNames={colNames3}/></div>
            </div>
         </div>
     )
