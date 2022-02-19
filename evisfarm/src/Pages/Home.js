@@ -9,12 +9,15 @@ export default class Home extends Component {
 
       <div className='home'>
          <Navigation/>
- <h1 className='h1'>EvisFarm</h1>
- <h2 className='h2'>Welcome to home page!</h2>
- <div className='link'><Link to="/Login"> <button type="button">
-          Login
-     </button></Link>
- </div>
+            <h1 className='h1'>EvisFarm</h1>
+            <h2 className='h2'>Welcome to home page!</h2>
+            <div className='link'>
+              <Link to="/Login"> 
+                <button type="button">
+               Login
+                </button>
+              </Link>
+            </div>
 
       </div>
     )

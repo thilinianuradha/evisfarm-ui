@@ -50,7 +50,7 @@ export default class Login extends Component {
           <br/>
           </div>
         <div className='input'>
-          <input type="Submit"/>
+          <input type="Submit" value="Submit"/>
         </div>
 
       <p> Username = "Thilini" and Password = "thilini@123"</p>
