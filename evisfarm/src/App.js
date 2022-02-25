@@ -4,6 +4,8 @@ import Profile from "./Pages/Profile";
 import Home from "./Pages/Home";
 import Crop from "./Pages/Crop";
 import SignUp from "./Pages/Signup";
+import Ad from "./Common components/Ad";
+import Marketplace from "./Pages/Marketplace";
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 
@@ -18,6 +20,8 @@ function App() {
             <Route exact path="/Profile" component={Profile}/>
             <Route exact path="/Crop" component={Crop}/>
             <Route exact path="/Signup" component={SignUp}/>
+            <Route exact path="/Ad" component={Ad}/>
+            <Route exact path="/Marketplace" component={Marketplace}/>
           </Switch>
         </Router>
 }

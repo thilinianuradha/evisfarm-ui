@@ -5,7 +5,7 @@ import { Form , FormControl, Button } from 'react-bootstrap'
 import { Container } from 'react-bootstrap'
 import { NavDropdown } from 'react-bootstrap'
 
-export default class Navigation extends Component {
+export default class Navigation2 extends Component {
   render() {
     return (
         <Navbar bg="light" expand="lg">
@@ -19,13 +19,11 @@ export default class Navigation extends Component {
               navbarScroll
             >
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/Marketplace">Market Place</Nav.Link>
-              <Nav.Link href="">About Us</Nav.Link>
-              <Nav.Link href="">Contact Us</Nav.Link>
+              
         
             </Nav>
             <Nav className="d-flex">
-            <Nav.Link href="/Login"> Login </Nav.Link>
+            <Nav.Link href="/Login"> Notifications </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
