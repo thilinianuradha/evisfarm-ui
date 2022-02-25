@@ -19,11 +19,12 @@ export default class Navigation2 extends Component {
               navbarScroll
             >
               <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/Profile">My Profile</Nav.Link>
               
         
             </Nav>
             <Nav className="d-flex">
-            <Nav.Link href="/Login"> Notifications </Nav.Link>
+            <Nav.Link href="/Notifications"> Notifications </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

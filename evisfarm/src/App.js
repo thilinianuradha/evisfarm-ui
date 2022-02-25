@@ -8,6 +8,7 @@ import Ad from "./Common components/Ad";
 import Marketplace from "./Pages/Marketplace";
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import Notifications from "./Pages/Notifications";
 
 
 
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/Signup" component={SignUp}/>
             <Route exact path="/Ad" component={Ad}/>
             <Route exact path="/Marketplace" component={Marketplace}/>
+            <Route exact path="/Notifications" component={Notifications}/>
           </Switch>
         </Router>
 }
