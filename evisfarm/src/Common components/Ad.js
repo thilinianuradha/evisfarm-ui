@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card  } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 export class Ad extends Component {
   render() {
@@ -16,7 +17,7 @@ export class Ad extends Component {
                 A 50 acres of maize cultivation is going to start in this december. <br/>
                 Price- 0000000$
                 </Card.Text>
-                <Button variant="light">More Details</Button>
+                <Button variant="light"> <Link to="/AdInfo"> More Details</Link></Button>
 
                 <Button variant="light">Buy</Button>
             </Card.Body>

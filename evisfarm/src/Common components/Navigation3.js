@@ -19,6 +19,7 @@ export default class Navigation3 extends Component {
               navbarScroll
             >
               <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/Marketplace">Marketplace</Nav.Link>
               
         
             </Nav>
