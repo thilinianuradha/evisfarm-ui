@@ -3,6 +3,7 @@ import { Link, Redirect} from 'react-router-dom'
 import Table1 from '../Common components/Table1'
 import './Profile.css';
 import Image1 from '../Images/images.jpg'
+import Axios from 'axios'
 
 
 const list = [

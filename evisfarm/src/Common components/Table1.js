@@ -1,7 +1,7 @@
 import React from 'react'
 import './Table1.css';
 
-function Table1({ list, colNames, width='auto', height='auto'}) {
+ function Table1({ list, colNames, width='auto', height='auto'}) {
   return (
     <div>
 {
