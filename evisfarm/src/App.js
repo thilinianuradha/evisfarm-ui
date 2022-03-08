@@ -10,6 +10,7 @@ import Marketplace from "./Pages/Marketplace";
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import Notifications from "./Pages/Notifications";
 import AdInfo from "./Pages/AdInfo";
+import dummy from "./Pages/dummy";
 
 
 
@@ -26,6 +27,7 @@ function App() {
             <Route exact path="/Marketplace" component={Marketplace}/>
             <Route exact path="/Notifications" component={Notifications}/>
             <Route exact path="/AdInfo" component={AdInfo}/>
+            <Route exact path="/dummy" component={dummy}/>
           </Switch>
         </Router>
 }
