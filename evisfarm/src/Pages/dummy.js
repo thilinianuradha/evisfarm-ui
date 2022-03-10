@@ -27,3 +27,4 @@ componentDidMount() {
 }
 
 export default dummy
+
