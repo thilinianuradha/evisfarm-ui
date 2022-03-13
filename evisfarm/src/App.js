@@ -11,6 +11,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import Notifications from "./Pages/Notifications";
 import AdInfo from "./Pages/AdInfo";
 import dummy from "./Pages/dummy";
+import Bid from "./Pages/Bid"
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/Notifications" component={Notifications}/>
             <Route exact path="/AdInfo" component={AdInfo}/>
             <Route exact path="/dummy" component={dummy}/>
+            <Route exact path="/Bid" component={Bid}/>
           </Switch>
         </Router>
 }
