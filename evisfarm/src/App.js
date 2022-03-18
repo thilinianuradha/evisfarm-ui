@@ -14,7 +14,8 @@ import dummy from "./Pages/dummy";
 import Bid from "./Pages/Bid"
 import Contact from "./Pages/Contact";
 import SocialMedia from "./Common components/SocialMedia";
-import Footer from "./Common components/Footer";
+import AboutUs from "./Pages/AboutUs";
+
 
 
 
@@ -35,7 +36,8 @@ function App() {
             <Route exact path="/Bid" component={Bid}/>
             <Route exact path="/Contact" component={Contact}/>
             <Route exact path="/SocialMedia" component={SocialMedia}/>
-            <Route exact path="/Footer" component={Footer}/>
+            <Route exact path="/AboutUs" component={AboutUs}/>
+        
 
           </Switch>
         </Router>

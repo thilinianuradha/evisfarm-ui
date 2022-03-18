@@ -4,6 +4,7 @@ import './Home.css'
 import Navigation from '../Common components/Navigation'
 import { Col, Container, Row} from 'react-bootstrap'
 
+
 export default class Home extends Component {
   render() {
     return (
@@ -28,8 +29,6 @@ export default class Home extends Component {
               I want to buy..
                 </button>
               </Link>
-           
-            
             </div>
 
       </div>
