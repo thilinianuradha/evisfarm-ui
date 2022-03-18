@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 import Navigation from '../Common components/Navigation'
-import { Container} from 'react-bootstrap'
+import { Col, Container, Row} from 'react-bootstrap'
 
 export default class Home extends Component {
   render() {
@@ -13,21 +13,24 @@ export default class Home extends Component {
   <p>EveryoneisaFarmer!</p>
 </Container>
          <Navigation />
+         <div>
+          
             <h3 className='h2'>Welcome to home page!</h3>
-            <div className='link'>
+        
               <Link to="/Signup"> 
                 <button type="button">
               I want to sell..
                 </button>
               </Link>
-           
+          
               <Link to="#"> 
                 <button type="button">
               I want to buy..
                 </button>
               </Link>
+           
+            
             </div>
-          
 
       </div>
     )

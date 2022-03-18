@@ -1,6 +1,6 @@
 
 import Login from "./Pages/Login";
-import Profile from "./Pages/Profile";
+//import Profile from "./Pages/Profile";
 import Home from "./Pages/Home";
 import Crop from "./Pages/Crop";
 import SignUp from "./Pages/Signup";
@@ -12,6 +12,9 @@ import Notifications from "./Pages/Notifications";
 import AdInfo from "./Pages/AdInfo";
 import dummy from "./Pages/dummy";
 import Bid from "./Pages/Bid"
+import Contact from "./Pages/Contact";
+import SocialMedia from "./Common components/SocialMedia";
+import Footer from "./Common components/Footer";
 
 
 
@@ -21,7 +24,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/Login" component={Login}/>
-            <Route exact path="/Profile" component={Profile}/>
+          
             <Route exact path="/Crop" component={Crop}/>
             <Route exact path="/Signup" component={SignUp}/>
             <Route exact path="/Ad" component={Ad}/>
@@ -30,6 +33,10 @@ function App() {
             <Route exact path="/AdInfo" component={AdInfo}/>
             <Route exact path="/dummy" component={dummy}/>
             <Route exact path="/Bid" component={Bid}/>
+            <Route exact path="/Contact" component={Contact}/>
+            <Route exact path="/SocialMedia" component={SocialMedia}/>
+            <Route exact path="/Footer" component={Footer}/>
+
           </Switch>
         </Router>
 }

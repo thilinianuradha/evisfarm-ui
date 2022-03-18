@@ -21,7 +21,7 @@ export default class Navigation extends Component {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/Marketplace">Market Place</Nav.Link>
               <Nav.Link href="">About Us</Nav.Link>
-              <Nav.Link href="">Contact Us</Nav.Link>
+              <Nav.Link href="/Contact">Contact Us</Nav.Link>
         
             </Nav>
             <Nav className="d-flex">

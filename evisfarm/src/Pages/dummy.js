@@ -10,9 +10,10 @@ import axios from 'axios'
          }
      }
 componentDidMount() {
-    axios.get('https://localhost:7082/api/[advertisements]')
+    axios.get('https://localhost:7082/api/[crops]')
     .then(response =>{
         console.log(response)
+        this.setState({posts : response.data})
     })
     .catch(error => {
         console.log(error)
@@ -20,11 +21,19 @@ componentDidMount() {
 }
 
   render() {
+    const { posts } = this.state
     return (
-      <div><p>list </p></div>
+      <div>
+      list of state
+      {
+        posts.length ?
+        posts.map(post => <div key={post.id}>{post.id} {post.cropType} {post.cropName}</div>) :
+        null
+      }
+      </div>
     )
+        }
   }
-}
 
 export default dummy
 

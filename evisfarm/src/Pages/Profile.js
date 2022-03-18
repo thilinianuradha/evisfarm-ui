@@ -3,25 +3,25 @@ import { Link, Redirect} from 'react-router-dom'
 import Table1 from '../Common components/Table1'
 import './Profile.css';
 import Image1 from '../Images/images.jpg'
-import Axios from 'axios'
+import axios from 'axios';
 
 
-const list = [
+/*const list = [
   {id:1, Description:"Maize cultivation/Anuradhapura/50Acres", Pending_Requests: 4},
   {id:2, Description:"Paddy cultivation/Polonnaruwa/10Acres", Pending_Requests: 2},
   {id:3, Description:"Carrot cultivation/Nuwara-Eliya/2Acres", Pending_Requests: 0},
-]
-
-const colNames = ['Id','Description','Pending_Requests']
 
 
-const list2 = [
+//const colNames = ['Id','Description','Pending_Requests']
+
+
+//const list2 = [
   {id:1, Description:"Maize cultivation/Anuradhapura/50Acres", Inprogress: 4},
   {id:2, Description:"Paddy cultivation/Polonnaruwa/10Acres", Inprogress: 2},
   {id:3, Description:"Carrot cultivation/Nuwara-Eliya/2Acres", Inprogress: 0},
-]
 
-const colNames2 = ['Id','Description','Inprogress']
+
+//const colNames2 = ['Id','Description','Inprogress']
 
 const list3 = [
   {id:1, Description:"Maize cultivation/Anuradhapura/50Acres", Status: "Completed" , Vendor:"Thilini Anuradha"},
@@ -31,26 +31,44 @@ const list3 = [
 
 const colNames3 = ['Id','Description','Status', 'Vendor']
 
+]
+
 
 class Profile extends Component {
 constructor(props){
     super(props)
-    const token = localStorage.getItem("token")
+    this.state={
+      posts:[]
+    }
+  }
+componentDidMount(){
+  axios.get('https://localhost:7082/api/[advertisements]')
+  .then(response=>{
+    console.log(response)
+    this.setState({posts : response.data})
+  })
+  .catch(error => {
+    console.log(error)
+  })
+}
+    //const token = localStorage.getItem("token")
 
-    let loggedIn = true
+    /*let loggedIn = true
     if (token==null){
         loggedIn=false
     }
     this.state = {
         loggedIn
     }
-}
+    */
 
-  render() {
-      if(this.state.loggedIn===false){
-          return <Redirect to = "/" />
-      }
-      return (
+
+  /*render()
+   {
+    const { posts } = this.state 
+    return
+    (
+       
         <div className='row profile'>
            <div className='col column1'>
              <h1> Hello Thilini!</h1>
@@ -65,12 +83,24 @@ constructor(props){
            </div>
            <div className='col column2 Table1'>
 
+           <div className='table_list'><h5>Advertisements</h5><Table1 list={
+             posts.length ?
+             posts.map(post => <div key={post.id}>{post.id}{post.location}{post.description}</div> ): null
+           }/></div>
+          
+
+
+
              <div className='table_list'><h5>Pending Requests</h5><Table1 list={list} colNames={colNames}/></div>
              <div className='table_list'><h5>In-progress</h5><Table1 list={list2} colNames={colNames2}/></div>
              <div className='table_list'><h5>History(Details)</h5><Table1 list={list3} colNames={colNames3}/></div>
            </div>
         </div>
+   
     )
   }
+
 }
-export default Profile;
+
+export default Profile
+*/
