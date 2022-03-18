@@ -7,9 +7,8 @@ export class Marketplace extends Component {
   render() {
     return (
       <div>
-          <Container>
           <Navigation2 />
-        
+          <Container>
           <br/>
   <Row>
     <Col><Ad/></Col>
