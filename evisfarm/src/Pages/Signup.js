@@ -86,24 +86,29 @@ render() {
           <div className="col-md-4 col-md-offset-4">
             <form className="registrationForm">
               <h2>Registration </h2>
+              <br/>
               <div className={validation.email.isInvalid && 'has-error'}>
-              <label htmlFor="full_name">Full Name</label>
-              <input type="string" className="form-control" name="full_name" placeholder="Full Name" onChange={this.handleInputChange} /> <span className="help-block">{validation.full_name.message}</span> </div>
+              <label htmlFor="full_name">Full Name</label> 
+              <input type="string" className="form-control" name="full_name" placeholder="Full Name" onChange={this.handleInputChange} /> <span className="help-block">{validation.full_name.message}</span> </div><br/>
               <div className={validation.email.isInvalid && 'has-error'}>
               <label htmlFor="email">Email address</label>
-              <input type="email" className="form-control" name="email" placeholder="Email address" onChange={this.handleInputChange} /> <span className="help-block">{validation.email.message}</span> </div>
+              <input type="email" className="form-control" name="email" placeholder="Email address" onChange={this.handleInputChange} /> <span className="help-block">{validation.email.message}</span> </div><br/>
               <div className={validation.phone.isInvalid && 'has-error'}>
               <label htmlFor="phone">Phone(enter only 10 digit number)</label>
-              <input type="phone" className="form-control" name="phone" placeholder="Phone Number" onChange={this.handleInputChange} /> <span className="help-block">{validation.phone.message}</span> </div>
+              <input type="phone" className="form-control" name="phone" placeholder="Phone Number" onChange={this.handleInputChange} /> <span className="help-block">{validation.phone.message}</span> </div><br/>
               <div className={validation.password.isInvalid && 'has-error'}>
               <label htmlFor="password">Password</label>
-              <input type="password" className="form-control" placeholder="Password" name="password" onChange={this.handleInputChange} /> <span className="help-block">{validation.password.message}</span> </div>
+              <input type="password" className="form-control" placeholder="Password" name="password" onChange={this.handleInputChange} /> <span className="help-block">{validation.password.message}</span> </div><br/>
               <div className={validation.password_confirmation.isInvalid && 'has-error'}>
               <label htmlFor="password_confirmation">Confirm Password</label>
-              <input type="password" className="form-control" placeholder="Confirm Password" name="password_confirmation" onChange={this.handleInputChange} /> <span className="help-block">{validation.password_confirmation.message}</span> </div>
-              <button onClick={this.handleFormSubmit} className="btn btn-primary"> Register </button>
+              <input type="password" className="form-control" placeholder="Confirm Password" name="password_confirmation" onChange={this.handleInputChange} /> <span className="help-block">{validation.password_confirmation.message}</span> </div> <br/>
+              <button onClick={this.handleFormSubmit} className="btn btn-primary"> Sign In </button>
             </form>
-          </div>
+            </div>
+          <div className="row">
+          <p>Already have an Account?<span> Login </span></p>
+          <h5>By signing up you agree to our Terms of Use</h5>
+        </div>
         </div>
     </div>
 )
