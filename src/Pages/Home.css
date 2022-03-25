@@ -3,7 +3,17 @@
     width: auto;
     margin: auto;
     text-align: center;
+    overflow: hidden;
 
 }
 
+.button {
+ 
+    padding: 16px;
+    color: #019267;
+}
+h1{
+    color: darkgreen;
+   font-style: bold;
+}
 

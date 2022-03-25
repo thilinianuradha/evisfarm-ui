@@ -15,6 +15,8 @@ import Bid from "./Pages/Bid"
 import Contact from "./Pages/Contact";
 import SocialMedia from "./Common components/SocialMedia";
 import AboutUs from "./Pages/AboutUs";
+import ProfileX from "./Pages/ProfileX";
+import AdPost from "./Pages/AdPost";
 
 
 
@@ -36,6 +38,8 @@ function App() {
             <Route exact path="/Contact" component={Contact}/>
             <Route exact path="/SocialMedia" component={SocialMedia}/>
             <Route exact path="/AboutUs" component={AboutUs}/>
+            <Route exact path="/ProfileX" component={ProfileX}/>
+            <Route exact path="/AdPost" component={AdPost}/>
         
 
           </Switch>

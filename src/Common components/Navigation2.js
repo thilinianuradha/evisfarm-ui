@@ -19,7 +19,7 @@ export default class Navigation2 extends Component {
               navbarScroll
             >
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/Profile">My Profile</Nav.Link>
+              <Nav.Link href="/ProfileX">My Profile</Nav.Link>
               
         
             </Nav>

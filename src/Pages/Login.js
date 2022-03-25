@@ -39,7 +39,7 @@ export default class Login extends Component {
     }
     return (
       <div className='Login'>
-        <h1>welcome to EvisFarm!</h1>
+        <h1>Welcome to EvisFarm!</h1>
         <form onSubmit={this.submitForm}>
           <div className='input'>
           <input type="text" placeholder="Username" name="Username" value={this.state.Username} onChange={this.onChange}/>
