@@ -1,4 +1,6 @@
+import { Link } from '@mui/material';
 import React, { Component } from 'react'
+import { Row } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom'
 import './Login.css';
 
@@ -52,10 +54,11 @@ export default class Login extends Component {
         <div className='input'>
           <input type="Submit" value="Submit"/>
         </div>
-
       <p> Username = "Thilini" and Password = "thilini@123"</p>
+      <p>Don't have an Account?   <Link to="/Signup"> Signup</Link></p>
         </form>
       </div>
+
     )
   }
 }

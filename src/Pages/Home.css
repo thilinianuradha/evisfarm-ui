@@ -10,10 +10,19 @@
 .button {
  
     padding: 16px;
-    color: #019267;
+    color: black;
+    margin: 50px;
 }
-h1{
-    color: darkgreen;
+.button:hover {background-color: #50C678;
+color: white;
+transform: translateY(-5px);}
+
+.title{
+   color : darkgreen;
    font-style: bold;
+   font-size: 60px;
+}
+h4{
+    color: #50C678;
 }
 

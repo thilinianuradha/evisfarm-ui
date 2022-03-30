@@ -11,27 +11,24 @@ export default class Home extends Component {
     return (
       <div className='home'>
 <Container>
-<h1 className="display-2 mb-4">EvisFarm</h1>
+<p className="title">EvisFarm</p>
   <h4>EveryoneisaFarmer!</h4>
 </Container>
          <Navigation />
          <Row>
-           <Row>
-            <h3 className='h3 display-6 mb-4'>Welcome to home page!</h3>
-            </Row>
             <Row>
               <Col>
               <Link to="/Signup"> 
-                <button className="button"><h4>
+                <button className="button"><h5>
               I want to sell..
-              </h4> </button>
+              </h5> </button>
               </Link>
               </Col>
               <Col>
               <Link to="/Signup"> 
-                <button className="button"><h4>
+                <button className="button"><h5>
               I want to buy..
-              </h4></button>
+              </h5></button>
               </Link>
               </Col>
               </Row>
@@ -44,4 +41,6 @@ export default class Home extends Component {
     )
   }
 }
+
+
 
