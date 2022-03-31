@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Table1 from '../Common components/Table1'
 import Navigation3 from '../Common components/Navigation3'
 import { Button } from '@mui/material'
-import { Container } from 'react-bootstrap'
+import { Container,Dropdown, DropdownButton, InputGroup, FormControl } from 'react-bootstrap'
 
 const list = [
     {Vendor:"----------------", Amount:"---------------", Date:"---------------", },
@@ -25,13 +25,22 @@ export default class Notifications extends Component {
 </div>
 
 <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Rs. 200,000.00</a></li>
-    <li><a href="#">Rs. 300,000.00</a></li>
-    <li><a href="#">Rs. 400,000.00</a></li>
-  </ul>
+<InputGroup className="mb-3">
+    <FormControl aria-label="Text input with dropdown button" />
+
+    <DropdownButton
+      variant="outline-secondary"
+      title="Dropdown"
+      id="input-group-dropdown-2"
+      align="end"
+    >
+      <Dropdown.Item href="#">Action</Dropdown.Item>
+      <Dropdown.Item href="#">Another action</Dropdown.Item>
+      <Dropdown.Item href="#">Something else here</Dropdown.Item>
+      <Dropdown.Divider />
+      <Dropdown.Item href="#">Separated link</Dropdown.Item>
+    </DropdownButton>
+  </InputGroup>
 </div> 
 
 
