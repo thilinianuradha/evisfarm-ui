@@ -8,7 +8,7 @@ import { NavDropdown } from 'react-bootstrap'
 export default class Navigation2 extends Component {
   render() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar color='red' expand="lg">
         <Container fluid>
           <Navbar.Brand href="#">EvisFarm</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />

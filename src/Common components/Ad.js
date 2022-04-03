@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Card  } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import './Ad.css'
 
 export class Ad extends Component {
   render() {

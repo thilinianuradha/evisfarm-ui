@@ -11,7 +11,7 @@ function onCreatePost(){
     cropType,
     cropName,
   };
-  axios.post('https://localhost:7082/api/crops/posts.json',postData,)
+  axios.post('',postData,)
   .then(response=>{
     console.log(response);
   });

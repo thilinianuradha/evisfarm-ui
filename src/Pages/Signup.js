@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import FormValidator from './FormValidator';
-//import './Signup.css';
+import './Signup.css';
 
 class Signup extends Component{
   constructor(){
@@ -81,9 +82,9 @@ this.state = {
 render() {
   let validation = this.submitted ?this.validator.validate(this.state) : this.state.validation
     return (
-      <div className="container">
+      <div className="sign">
         <div className="row">
-          <div className="col-md-4 col-md-offset-4">
+          <div className="col-md-5 col-md-offset-4">
             <form className="registrationForm">
               <h2>Registration </h2>
               <br/>
@@ -106,8 +107,8 @@ render() {
             </form>
             </div>
           <div className="row">
-          <p>Already have an Account?<span> Login </span></p>
-          <h5>By signing up you agree to our Terms of Use</h5>
+          <p classname="mt-5" style={{textAlignVertical: "center",textAlign: "center",}}>Already have an Account?<span><Link to="/Login"> Login </Link></span></p>
+          <h5 style={{textAlignVertical: "center",textAlign: "center",}}>By signing up you agree to our Terms of Use</h5>
         </div>
         </div>
     </div>

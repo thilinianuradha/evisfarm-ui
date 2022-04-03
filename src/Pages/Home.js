@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './Home.css'
 import Navigation from '../Common components/Navigation'
 import { Col, Container, Row} from 'react-bootstrap'
-import Image3 from '../Images/farm.jpg'
+import Image1 from '../Images/farmpng.png'
 
 
 export default class Home extends Component {
@@ -11,13 +11,16 @@ export default class Home extends Component {
     return (
       <div className='home'>
 <Container>
-<p className="title">EvisFarm</p>
-  <h4>EveryoneisaFarmer!</h4>
+<p className="title">EvisFarm - Yiled selling web Portal</p>
+  <h4>Everyone is a Farmer !</h4>
 </Container>
          <Navigation />
-         <Row>
-            <Row>
-              <Col>
+         <Container className="container2">
+           <Row>
+           <Col className="bottomCol">
+         <Row className="bottom-half">
+              <p className="homepageNote">EvisFarm simplifies the way of crop buying and selling. </p>
+            <Col>
               <Link to="/Signup"> 
                 <button className="button"><h5>
               I want to sell..
@@ -32,10 +35,12 @@ export default class Home extends Component {
               </Link>
               </Col>
               </Row>
-              <Row className='mt-5'>
-              <img src={Image3} alt='' height={200}/> <br/>
+              </Col>
+              <Col className="homeImage bottomCol">
+              <img src={Image1} alt='' width={500} height={300}/> <br/>
+              </Col>
               </Row>
-            </Row>
+              </Container>
 
       </div>
     )
