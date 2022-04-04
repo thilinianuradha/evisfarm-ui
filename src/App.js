@@ -17,6 +17,7 @@ import SocialMedia from "./Common components/SocialMedia";
 import AboutUs from "./Pages/AboutUs";
 import ProfileX from "./Pages/ProfileX";
 import AdPost from "./Pages/AdPost";
+import SearchBar from "./Common components/SearchBar";
 
 
 
@@ -40,6 +41,7 @@ function App() {
             <Route exact path="/AboutUs" component={AboutUs}/>
             <Route exact path="/ProfileX" component={ProfileX}/>
             <Route exact path="/AdPost" component={AdPost}/>
+            <Route exact path="/SearchBar" component={SearchBar}/>
         
 
           </Switch>
