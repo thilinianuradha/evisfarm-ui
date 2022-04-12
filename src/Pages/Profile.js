@@ -4,10 +4,46 @@ import { Link } from 'react-router-dom'
 import { Row, Col } from 'react-bootstrap'
 import axios from 'axios'
 import './Profile.css';
-import { render } from '@testing-library/react'
+
+
+
+
+
+
+
+
+
 
 const Profile = () => {
-React.useEffect(()=>{
+
+
+
+  const [t1,sett1] = useState ('')
+
+  let one = "https://localhost:7082/api/[advertisements]"
+  let two = "https://localhost:7082/api/[Buyers]"
+   
+  const requestOne = axios.get(one);
+  const requestTwo = axios.get(two);
+   
+  axios.all([requestOne, requestTwo]).then(axios.spread((...responses) => {
+    const responseOne = responses[0]
+    const responseTwo = responses[1]
+    //console.log(responseOne, responseTwo);
+   sett1(responseOne.data)
+   
+    // use/access the results 
+  })).catch(errors => {
+    // react on errors.
+  })
+
+
+
+
+
+
+
+/*React.useEffect(()=>{
   Promise.all([
       fetch('https://localhost:7082/api/[advertisements]'),
       fetch('https://localhost:7082/api/[Buyers]')
@@ -26,7 +62,7 @@ React.useEffect(()=>{
   });
   },[])
 
-
+*/
 
 
 
@@ -60,22 +96,7 @@ axios.all(one,two).then(
 )
 }*/
 
-/*export default class Profile extends Component {
-  state = {
-    advertisements: [],
-};
-componentDidMount(){
-  axios.get("https://localhost:7082/api/[advertisements]") // where the api gets fetched from that API
-    .then(res=>{
-      console.log(res);
-      this.setState({ advertisements: res.data});
-    })
-}
-*/
-/*useEffect(()=>{
-  fetchdata()
-}, [])
-*/
+
  
     return (
     
@@ -93,7 +114,7 @@ componentDidMount(){
                </Link>
                </Col>
                <Col>
-            
+              <p> {t1} </p> 
                </Col>
                </Row>
 
