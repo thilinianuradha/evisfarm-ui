@@ -43,9 +43,9 @@ export default class AdInfo extends Component {
     <Container> 
     <Row>
       
-    <div className='col Table1'>
+    <div className='col Table1' style={{backgroundColor: "#50C678", alignItems:"center"}}>
 
-<div className='table_list'><Table1 list={list} colNames={colNames}/></div>
+<div className='table_list'><Table1  list={list} colNames={colNames}/></div>
 
 </div>
     

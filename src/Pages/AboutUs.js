@@ -23,13 +23,13 @@ export default function AboutUs() {
             
         </Col>
         <Col lg='7' className='d-flex align-items-center'>
-           <p>ukehrkew ekthejrt elktkjwl wlkejwl wlkerjw wlkej wlekjflej ekjgheorbye euyh5y ethekrg j4lti34 4htljh4t etjherjthea rtlhaertjae ertherht aeoirtheurt awet owiithoeut </p>
+           <p>The "EvisFarm" gives you a new experience in selling your crops. Our intention is to provide you a great service. So give a try on "EvisFarm" ! </p>
         </Col>
         <Col lg='7' className='d-flex align-items-center'>
            <p>
-               <span>Grow </span>
-               <span>Sell </span>
-               <span>earn </span>
+               <span> Grow !</span>
+               <span> Sell !</span>
+               <span> earn !</span>
            </p>
         </Col>
 </Row>

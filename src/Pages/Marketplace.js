@@ -10,6 +10,12 @@ export class Marketplace extends Component {
           <Navigation2 />
           <Container>
           <br/>
+          <h3>Market Place</h3>
+  <Row>
+    <Col><Ad/></Col>
+    <Col><Ad/></Col>
+    <Col><Ad/></Col>
+  </Row>
   <Row>
     <Col><Ad/></Col>
     <Col><Ad/></Col>

@@ -10,7 +10,7 @@ export default class Login extends Component {
     super(props)
     let loggedIn = false
     this.state = {
-      Username:"",
+      Email:"",
       Password:"",
       loggedIn
     }
@@ -26,9 +26,9 @@ export default class Login extends Component {
 
   submitForm(e){
     e.preventDefault()
-    const {Username, Password} = this.state
+    const {Email, Password} = this.state
 
-    if (Username==="Thilini" && Password==="thilini@123"){
+    if (Email==="Thilini@gmail.com" && Password==="thilini@123"){
       localStorage.setItem("token", "")
       this.setState({
         loggedIn: true
@@ -45,7 +45,7 @@ export default class Login extends Component {
         <h1>Welcome to EvisFarm!</h1>
         <form onSubmit={this.submitForm}>
           <div className='input'>
-          <input type="text" placeholder="Username" name="Username" value={this.state.Username} onChange={this.onChange}/>
+          <input type="text" placeholder="Email" name="Email" value={this.state.Email} onChange={this.onChange}/>
           <br/> 
           </div>
           <div className='input'>
@@ -55,7 +55,7 @@ export default class Login extends Component {
         <div className='input'>
           <input type="Submit" value="Submit"/>
         </div>
-      <p> Username = "Thilini" and Password = "thilini@123"</p>
+      
       <p>Don't have an Account?   <Link to="/Signup"> Signup</Link></p>
         </form>
       </div>

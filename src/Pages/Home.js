@@ -11,7 +11,7 @@ export default class Home extends Component {
     return (
       <div className='home'>
 <Container>
-<p className="title">EvisFarm - Yiled selling web Portal</p>
+<p className="title">EvisFarm - Yield selling web Portal</p>
   <h4>Everyone is a Farmer !</h4>
 </Container>
          <Navigation />
