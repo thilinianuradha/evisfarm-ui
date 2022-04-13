@@ -16,12 +16,21 @@ import { Card } from 'react-bootstrap'
  class ProfileX extends React.Component {
   state = {
     advertisements: [],
+    Buyers: [],
 };
+
 componentDidMount(){
   axios.get("https://localhost:7082/api/[advertisements]") // where the api gets fetched from that API
-    .then(res=>{
-      console.log(res);
-      this.setState({ advertisements: res.data});
+    .then(res1=>{
+      console.log(res1);
+      this.setState({ advertisements: res1.data});
+    })
+}
+componentDidMount(){
+  axios.get("https://localhost:7082/api/[Buyers]") // where the api gets fetched from that API
+    .then(res2=>{
+      console.log(res2);
+      this.setState({ Buyers: res2.data});
     })
 }
 
@@ -31,6 +40,7 @@ componentDidMount(){
         <Link to="AdPost"><button> CLICK </button></Link> 
 <br/>
 {this.state.advertisements.map(advertisement=><li key = {advertisement.id}>{advertisement.id}  {advertisement.location}{advertisement.areaofCultivation} {advertisement.nameofOwner}</li>)}
+{this.state.Buyers.map(Buyer=><li key = {Buyer.id}>{Buyer.id}  {Buyer.fullName}{Buyer.location} {Buyer.email}</li>)}
 <br/>
 <br/>
 

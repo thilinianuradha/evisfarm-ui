@@ -26,7 +26,7 @@ export default function Contact() {
                        <strong> E-mail : evisfarm@gmail.com</strong>
                        </p>
                        <p>
-                           <strong> Phone : +94 526 5224</strong>
+                           <strong> Phone : +94 22 526 5224</strong>
                        </p>
                        <p>
                            <strong> Address : No. 5, Main street , Anuradhapura</strong>

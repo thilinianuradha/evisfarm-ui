@@ -5,20 +5,7 @@ import { Row, Col } from 'react-bootstrap'
 import axios from 'axios'
 import './Profile.css';
 
-
-
-
-
-
-
-
-
-
 const Profile = () => {
-
-
-
-  const [t1,sett1] = useState ('')
 
   let one = "https://localhost:7082/api/[advertisements]"
   let two = "https://localhost:7082/api/[Buyers]"
@@ -29,17 +16,13 @@ const Profile = () => {
   axios.all([requestOne, requestTwo]).then(axios.spread((...responses) => {
     const responseOne = responses[0]
     const responseTwo = responses[1]
-    //console.log(responseOne, responseTwo);
-   sett1(responseOne.data)
+    console.log(responseOne, responseTwo);
+
    
     // use/access the results 
   })).catch(errors => {
     // react on errors.
   })
-
-
-
-
 
 
 
@@ -73,11 +56,9 @@ const Profile = () => {
 
 
 
+/*
 
-
-/*const Profile = () => {
-  const [t1, sett1] = useState([]);
-  const [t2, sett2] = useEffect([]);
+const Profile = () => {
 
 const fetchdata = () => {
   const table1 ='https://localhost:7082/api/[advertisements]';
@@ -92,12 +73,13 @@ axios.all(one,two).then(
     
     console.log(one)
     console.log(two)
+    
   } )
 )
-}*/
+}
+*/
 
 
- 
     return (
     
  <div>
@@ -108,13 +90,13 @@ axios.all(one,two).then(
                <Link to ="/"> 
                <div className="col-md-12 text-center">
                   <button type="button" >
-                      Back to Home
+                      Back to Home 
                   </button>
                   </div>
                </Link>
                </Col>
                <Col>
-              <p> {t1} </p> 
+            
                </Col>
                </Row>
 
