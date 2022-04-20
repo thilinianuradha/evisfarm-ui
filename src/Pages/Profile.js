@@ -18,7 +18,7 @@ const Profile = () => {
     const responseTwo = responses[1]
     console.log(responseOne, responseTwo);
 
-   
+    //responseOne.map(advertisement=><li key = {advertisement.id}>{advertisement.id}  {advertisement.location}{advertisement.areaofCultivation} {advertisement.nameofOwner}</li>)
     // use/access the results 
   })).catch(errors => {
     // react on errors.
@@ -96,7 +96,8 @@ axios.all(one,two).then(
                </Link>
                </Col>
                <Col>
-            
+         
+         {advertisements.map(advertisement=><li key = {advertisement.id}>{advertisement.id}  {advertisement.location}{advertisement.areaofCultivation} {advertisement.nameofOwner}</li>)}
                </Col>
                </Row>
 
