@@ -26,6 +26,7 @@ export default class Navigation extends Component {
             </Nav>
             <Nav className="d-flex">
             <Nav.Link href="/Login"> Login </Nav.Link>
+            <Nav.Link href="/Login"> Login </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
