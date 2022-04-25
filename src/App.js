@@ -1,6 +1,5 @@
 
-import Login from "./Pages/Login";
-import Home from "./Pages/Home";
+import home1 from "./Pages/home1";
 import Crop from "./Pages/Crop";
 import SignUp from "./Pages/Signup";
 import Ad from "./Common components/Ad";
@@ -24,8 +23,7 @@ import Profile from "./Pages/Profile";
 function App() {
   return <Router>
           <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/Login" component={Login}/>
+            <Route exact path="/" component={home1}/>
             <Route exact path="/Profile" component={Profile}/>
             <Route exact path="/Crop" component={Crop}/>
             <Route exact path="/Signup" component={SignUp}/>

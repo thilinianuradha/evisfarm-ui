@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Table1 from '../Common components/Table1'
 import Navigation3 from '../Common components/Navigation3'
 import { Button } from '@mui/material'
-import { Container,Dropdown, DropdownButton, InputGroup, FormControl } from 'react-bootstrap'
+import './Bid.css';
+import { Container,Dropdown, DropdownButton, InputGroup, FormControl, Row } from 'react-bootstrap'
 
 const list = [
     {Vendor:"----------------", Amount:"---------------", Date:"---------------", },
@@ -15,14 +16,17 @@ const list = [
 
 export default class Notifications extends Component {
   render() {
-    return (<div>
+    return (
+    <div>
           <Navigation3 />
           <Container>
+            <Row >
           <div className='col Table1'>
 
-<div className='table_list'><Table1 list={list} colNames={colNames}/></div>
+                <Table1 list={list} colNames={colNames}/>
 
 </div>
+</Row>
 
 <div class="dropdown">
 <InputGroup className="mb-3">
@@ -34,11 +38,18 @@ export default class Notifications extends Component {
       id="input-group-dropdown-2"
       align="end"
     >
-      <Dropdown.Item href="#">Action</Dropdown.Item>
-      <Dropdown.Item href="#">Another action</Dropdown.Item>
-      <Dropdown.Item href="#">Something else here</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 100,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 200,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 300,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 400,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 500,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 600,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 700,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 800,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 900,000.00</Dropdown.Item>
+      <Dropdown.Item href="#">Rs. 1,000,000.00</Dropdown.Item>
       <Dropdown.Divider />
-      <Dropdown.Item href="#">Separated link</Dropdown.Item>
+      <Dropdown.Item href="#">Enter</Dropdown.Item>
     </DropdownButton>
   </InputGroup>
 </div> 
