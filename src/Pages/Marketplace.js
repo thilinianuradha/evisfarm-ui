@@ -26,6 +26,11 @@ export class Marketplace extends Component {
     <Col><Ad/></Col>
     <Col><Ad/></Col>
   </Row>
+  <Row>
+    <Col><Ad/></Col>
+    <Col><Ad/></Col>
+    <Col><Ad/></Col>
+  </Row>
 </Container>
       </div>
     )

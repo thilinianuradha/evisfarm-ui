@@ -43,8 +43,8 @@ export default class home1 extends Component {
       }
 
     return (
-      <div>
-          <Row>
+      <div className="home1">
+          <Row  >
               <Col>
                 <div>
                 <p className="title">EvisFarm - Yield selling web Portal</p>
@@ -60,7 +60,7 @@ export default class home1 extends Component {
               <Col>
               <div className='Login'>
         <h1>Welcome to EvisFarm!</h1>
-        <h3>Login</h3>
+        <h5>Login</h5>
         <form onSubmit={this.submitForm}>
           <div className='input'>
           <input type="text" placeholder="Email" name="Email" value={this.state.Email} onChange={this.onChange}/>

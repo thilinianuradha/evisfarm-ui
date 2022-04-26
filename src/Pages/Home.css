@@ -1,10 +1,16 @@
+.home1 {
+    overflow: hidden;
+    margin-left: 50px;
+    height:635px;
+}
+
 .home {
 
     width: auto;
     margin: auto;
     text-align: center;
     overflow: hidden;
-
+  
 
 }
 
@@ -49,13 +55,12 @@ padding: 10px;
 }
 .Login {
    
-    padding: 100px;
+    padding: 150px;
     background-color: #50C678;
-    margin: 60px;
-   
+
    }
    
-   form, h1 {
+   form, h1, h5 {
        
        text-align: center;
    }
@@ -63,4 +68,4 @@ padding: 10px;
    .input {   margin: 20px;
       text-align: center;
    }
-   
+ 
