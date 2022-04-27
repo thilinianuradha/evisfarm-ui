@@ -17,7 +17,8 @@ export class Ad extends Component {
                 <Card.Text>
                 Anuradhapura / 50 Acres <br/><br/>
                 A 50 acres of maize cultivation is going to start in this december. <br/>
-                Price- 0000000$
+                Price- 0000000$ <br/>
+     
                 </Card.Text>
                 <Button className="m-3" style={{color: "#000000" , backgroundColor:"#50C678"}} btn-sm col-xs-2 margin-left> <Link to="/AdInfo"> More Details </Link></Button>
                 <Button className="m-3" style={{color: "#000000" , backgroundColor:"#50C678"}}><Link to="/Bid">Buy</Link></Button>

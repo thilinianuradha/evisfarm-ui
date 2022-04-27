@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { Navbar , Nav } from 'react-bootstrap'
 import { Form , FormControl, Button } from 'react-bootstrap'
 import { Container } from 'react-bootstrap'
-import { NavDropdown } from 'react-bootstrap'
+
 
 export default class Navigation extends Component {
   render() {
@@ -20,13 +20,11 @@ export default class Navigation extends Component {
             >
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/Marketplace">Market Place</Nav.Link>
-              <Nav.Link href="/AboutUs">About Us</Nav.Link>
-              <Nav.Link href="/Contact">Contact Us</Nav.Link>
+          
         
             </Nav>
             <Nav className="d-flex">
-            <Nav.Link href="/Login"> Login </Nav.Link>
-            <Nav.Link href="/Login"> Login </Nav.Link>
+            <Nav.Link href="/Notifications"> Notifications </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import { Col, Row } from 'react-bootstrap';
 
 export default function AdPost(Props) {
 const [cropType,setcropType] = useState('');
@@ -34,7 +35,8 @@ function onCreatePost(){
 
 
   return (
-    <div>
+    <div className="col-md-15 col-md-offset-4">
+    
       <h1>Create post form</h1>
     <form onSubmit={onCreatePost}>
       <div className='mb-3'> 
@@ -59,6 +61,7 @@ function onCreatePost(){
       <button type='submit' className='bg-purple-500 text--white px-3 py-1'>Submit</button>
       </div>
     </form>
+  
     </div>
   )
 }
