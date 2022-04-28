@@ -22,14 +22,14 @@ componentDidMount(){
     return (
       <div>
       
-{this.state.advertisements.map(advertisement=><li key = {advertisement.id}> {advertisement.id}  {advertisement.location}{advertisement.areaofCultivation} {advertisement.nameofOwner} {<span> <button>view</button> </span>} </li>)} 
+{this.state.advertisements.map(advertisement=><li key = {advertisement.id}> {advertisement.id}  {advertisement.location} {advertisement.areaofCultivation} {advertisement.nameofOwner} {<span> <button>view</button> </span>} </li>)} 
 
 <br/>
 <br/>
 
 
       </div>
-    )+
+    )
   }
 }
 export default PendingReq;

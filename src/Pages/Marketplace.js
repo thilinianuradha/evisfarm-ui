@@ -12,9 +12,10 @@ export class Marketplace extends Component {
           <br/>
           <h3>Market Place</h3>
   <Row>
-    <Col><Ad/></Col>
-    <Col><Ad/></Col>
-    <Col><Ad/></Col>
+    <Col><li><Ad/></li></Col>
+    <Col><li><Ad/></li></Col>
+    <Col><li><Ad/></li></Col>
+  
   </Row>
   <Row>
     <Col><Ad/></Col>
